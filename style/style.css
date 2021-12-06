@@ -223,6 +223,12 @@ section {
 
 .heart {
     position: relative;
+    font-size: 30px;
+}
+
+.heart::after {
+    color:#9256dc;
+    
 }
 
 .heart .far {
