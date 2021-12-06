@@ -1,9 +1,9 @@
 
 
 
-
 body {
-    background-color: #eaeaea;
+    margin:0;
+
 }
 
 
@@ -35,8 +35,10 @@ header {
 }
 
 
-#location {
-    padding: 10px 0px;
+
+.fa-map-marker-alt {
+    content: "\f3c5";
+    padding: 10px;
 }
 
 /* nav */
@@ -60,10 +62,11 @@ nav h2 {
 
 nav h3 {
     padding: 10px 10px 0;
+    opacity: 65%;
+    font-weight: normal;
 }
 
 .button {
-    width: 50%;
     margin: 35px auto;
     padding: 15px;
     border-radius: 50px;
@@ -79,10 +82,10 @@ nav h3 {
     -o-transition: all .2s;
     transition: all .2s;
 }
-/* contenue principale */
+/* partie fonctionnement */
 
 section {
-    padding: 0 20px 40px;
+    padding: 20px 40px;
     margin: 0;
 }
 
@@ -122,16 +125,31 @@ section {
     -webkit-box-shadow: 0px 5px 10px #b4b4b4;
     box-shadow: 0px 5px 10px #b4b4b4;
 }
-
-#fonctionnement li::before {
-    color: #fff;
-    display: inline-block;
-    background-color: #9256dc;
-    border-radius: 100%;
-    padding: 2px 7px;
-    position: relative;
-    left: -10px;
+#fonctionnement > div > ol > li > a > i {
+    color: black;
+    padding: 18px;
+    opacity: 50%;
 }
+
+#fonctionnement > div > ol > li > a > i:hover {
+    color: #9256dc;
+}
+#fonctionnement > div > ol > li > a {
+    color: black;
+    opacity: 80%;
+    text-decoration: none;
+}
+.fa-solid {
+        color: #fff;
+        background-color: #9256dc;
+        border-radius: 100%;
+        padding: 10px 2px;
+        position: relative;
+        width: 5%;
+        left: -10px;
+}
+
+
 /* partie restaurant */
 
 #restaurant {
