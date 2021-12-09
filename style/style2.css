@@ -1,3 +1,13 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: #000;
+    font-size: 1em;
+
+}
+
 body {
     background-color: #eaeaea;
 }
@@ -81,7 +91,6 @@ img {
 
 #pages .menuTitre__text {
     background-color: #eaeaea;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,25 +103,20 @@ img {
     position: relative;
     top: -50px;
     margin-bottom: -50px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     font-size: 1.6em;
-    padding: 25px 0 0;
+    padding: 30px 15px 0px;
+}
+#pages .menuTitre :nth-child(2) {
+    --nth-child: 1;
 }
 
 .heart {
     position: relative;
 }
-.heart .far {
-    opacity: 1;
-    -webkit-transition: opacity .8s;
-    -o-transition: opacity .8s;
-    transition: opacity .8s;
-}
-.heart .far {
-    color: #000;
-    opacity: 1;
-}
+
+
 
 #pages .menuTitre__text .heart .fas {
     position: absolute;
@@ -133,12 +137,23 @@ img {
     flex-wrap: nowrap;
 }
 #pages .menu__titre {
-    font-weight: 300;
+    color: black;
+    opacity: 70%;
+    position: relative;
+    font-weight: normal;
+    margin-bottom: 15px;
 }
-h3 {
-    font-size: 1.1em;
-    font-weight: 300;
+
+#pages .menu__titre::after{
+    content: '';
+    height: 2px;
+    width: 5%;
+    background: #99E2D0;
+    position: absolute;
+    left: 0;
+    bottom: -40%;
 }
+
 
 #pages .menu .element {
     width: 100%;
@@ -211,6 +226,23 @@ a {
 #pages .menu :nth-child(2) {
     --nth-child: 1;
 }
+#pages .menu .element:hover .element__menu__description {
+    webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    margin-right: -100px;
+}
+#pages .menu .element:hover .element__menu__description h3, 
+#pages .menu .element:hover .element__menu__description p {
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    width: 60%;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
 #pages .menu .element__menu__price {
     display: -webkit-box;
@@ -220,9 +252,73 @@ a {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    margin-left: -30px;
     padding: 0 15px 10px 0px;
     background-color: #fff;
+}
+#pages .menu .element__menu__icon {
+    background-color: #98e2cf;
+    margin: -10px 0 -15px 0px;
+    margin-right: -65px;
+    width: 67.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#pages > main > section > a > div > div.element__menu__icon > i {
+    color: white;
+    font-size: 24px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#pages .menu .element:hover .element__menu__icon .fas {
+    -webkit-transform: rotate(
+360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(
+360deg);
+    -webkit-transition: all .4s ease-in-out .1s;
+    -o-transition: all .4s ease-in-out .1s;
+    transition: all .4s ease-in-out .1s;
+}
+
+#pages .menu .element:hover .element__menu__icon .fas {
+    -webkit-transform: rotate(
+360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(
+360deg);
+    -webkit-transition: all .4s ease-in-out .1s;
+    -o-transition: all .4s ease-in-out .1s;
+    transition: all .4s ease-in-out .1s;
+}
+
+#pages .menu .element {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+    overflow: hidden;
+    
+    -webkit-animation: slide 1s calc(var(--nth-child) * 150ms) forwards;
+    animation: slide 1s calc(var(--nth-child) * 150ms) forwards;
 }
 .button {
     width: 50%;
@@ -241,6 +337,12 @@ a {
     -o-transition: all .2s;
     transition: all .2s;
 }
+.button:hover{
+    background: -o-linear-gradient(top left, #ff88de 0%, #9a63df 100%);
+    background: linear-gradient(to bottom right, #ff88de 0%, #9a63df 100%);
+    
+    box-shadow: 0px 7px 5px #b4b4b4;
+}
 #pages .button {
     width: 50%;
     display: -webkit-box;
@@ -251,3 +353,6 @@ a {
     justify-content: center;
     margin: 30px auto 35px;
 }
+
+
+
