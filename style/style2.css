@@ -288,16 +288,7 @@ a {
     transition: all .4s ease-in-out .1s;
 }
 
-#pages .menu .element:hover .element__menu__icon .fas {
-    -webkit-transform: rotate(
-360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(
-360deg);
-    -webkit-transition: all .4s ease-in-out .1s;
-    -o-transition: all .4s ease-in-out .1s;
-    transition: all .4s ease-in-out .1s;
-}
+
 
 #pages .menu .element {
     width: 100%;

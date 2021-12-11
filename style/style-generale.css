@@ -157,7 +157,40 @@ footer .contenue {
 
 }
 
+/* Desktop Pages */
 
+#pages .menu {
+    width: 25%;
+    min-width: 350px;
+    margin: 0 auto;
 }
-
+#pages section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#pages .menuTitre__text {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#pages section img {
+    max-height: 400px;
+}
+#pages .button {
+    width: 15%;
+}
+#pages main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#pages .menu__titre::after {
+    
+    width: 15%;
+}
+}
 
