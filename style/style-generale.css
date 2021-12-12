@@ -48,6 +48,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+#pages > main > section {
+    animation: fadein 3s ease-in-out;
+}
+
 /* footer */
 
 footer {
