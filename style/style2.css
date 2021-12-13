@@ -2,10 +2,20 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: Roboto-Regular;
     color: #000;
     font-size: 1em;
 
+}
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('../FONT/Shrikhand/Shrikhand-Regular.ttf')format('truetype');
+    
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../FONT/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 body {
@@ -108,9 +118,7 @@ img {
     font-size: 1.6em;
     padding: 30px 15px 0px;
 }
-#pages .menuTitre :nth-child(2) {
-    --nth-child: 1;
-}
+
 
 .heart {
     position: relative;
@@ -259,7 +267,7 @@ a {
     background-color: #98e2cf;
     margin: -10px 0 -15px 0px;
     margin-right: -65px;
-    width: 67.5px;
+    width: 59.5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -269,24 +277,37 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    animation-duration: 3s ease-in-out;
+    -webkit-animation-duration: 3s ease-in-out;
+    -o-animation-duration: 3s ease-in-out;
+
 }
-#pages > main > section > a > div > div.element__menu__icon > i {
+#pages .menu .element__menu .element__menu__icon i {
     color: white;
     font-size: 24px;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+    
+
 }
-#pages .menu .element:hover .element__menu__icon .fas {
-    -webkit-transform: rotate(
-360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(
-360deg);
-    -webkit-transition: all .4s ease-in-out .1s;
-    -o-transition: all .4s ease-in-out .1s;
-    transition: all .4s ease-in-out .1s;
+#pages .menu .element__menu:hover .element__menu__icon i {
+    animation: rotate 1s infinite linear;
+    -webkit-animation: rotate 1s linear;
+    -o-animation: 3s ease-in-out;
+    
+
 }
+
+
+@keyframes rotate {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg); }
+    
+  }
+
+  @-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg);
+         }
+    100% { -webkit-transform: rotate(360deg); }
+  }
 
 
 

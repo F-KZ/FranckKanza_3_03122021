@@ -19,6 +19,14 @@
     font-size: 1em;
 
 }
+@font-face {
+    font-family: Shrikhand;
+    src: url(./FONT/Shrikhand/Shrikhand-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: Roboto;
+    src: url(./FONT/Roboto/Roboto-Regular.ttf) format('truetype');
+}
 
 /* chargement */
 .loading {
@@ -114,11 +122,19 @@ nav {
     flex-direction: column;
     width: 100%;
     background-color: #f6f6f6;
+    padding: 0px 80px 0px 80px;
 }
 nav h2 {
     width: 70%;
     padding-top: 40px;
     margin: 0 auto;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#fonctionnement > div > h2 {
+    padding: 20px 55px 25px 55px;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 nav h3 {
