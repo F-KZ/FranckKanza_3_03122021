@@ -239,8 +239,8 @@ a {
 }
 /* SLide menu */
 #pages .menu .element:hover .element__menu__description {
-    webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
     transition: all 0.8s ease-in-out;
     margin-right: -100px;
 }
@@ -281,9 +281,7 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    animation-duration: 3s ease-in-out;
-    -webkit-animation-duration: 3s ease-in-out;
-    -o-animation-duration: 3s ease-in-out;
+    
 
 }
 #pages .menu .element__menu .element__menu__icon i {
