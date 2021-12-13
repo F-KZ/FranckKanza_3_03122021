@@ -98,6 +98,7 @@ img {
     -o-object-fit: cover;
     object-fit: cover;
 }
+/* Menu */
 
 #pages .menuTitre__text {
     background-color: #eaeaea;
@@ -143,7 +144,36 @@ img {
     flex-direction: column;
     overflow: hidden;
     flex-wrap: nowrap;
+    
 }
+/* Animation Menu */
+#pages > main > section:nth-child(2) {
+    animation: slide 5s  alternate;
+    -webkit-animation: slide 5s  alternate;
+    -o-animation: 3s ease-in-out;
+}
+#pages > main > section:nth-child(3) {
+    animation: slide 7s  alternate;
+    -webkit-animation: slide 7s  alternate;
+    -o-animation: 3s ease-in-out;
+}
+#pages > main > section:nth-child(4) {
+    animation: slide 9s  alternate;
+    -webkit-animation: slide 9s  alternate;
+    -o-animation: 3s ease-in-out;
+}
+@keyframes slide {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    
+  }
+
+  @-webkit-keyframes slide {
+    0% { -webkit-opacity: 0;}
+    100% { -webkit-opacity: 1; }
+  }
+
+
 #pages .menu__titre {
     color: black;
     opacity: 70%;
@@ -161,31 +191,7 @@ img {
     left: 0;
     bottom: -40%;
 }
-
-
-#pages .menu .element {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background-color: #fff;
-    overflow: hidden;
-    -webkit-animation: slide 1s calc(var(--nth-child) * 150ms) forwards;
-    animation: slide 1s calc(var(--nth-child) * 150ms) forwards;
-}
-#pages .menu :nth-child(2) {
-    --nth-child: 1;
-}
+/* Elements du menu */
 .element {
     width: 100%;
     height: 250px;
@@ -231,9 +237,7 @@ a {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-#pages .menu :nth-child(2) {
-    --nth-child: 1;
-}
+/* SLide menu */
 #pages .menu .element:hover .element__menu__description {
     webkit-transition: all .8s ease-in-out;
     -moz-transition: all .8s ease-in-out;
@@ -288,6 +292,8 @@ a {
     
 
 }
+/* rotation Icone */
+
 #pages .menu .element__menu:hover .element__menu__icon i {
     animation: rotate 1s infinite linear;
     -webkit-animation: rotate 1s linear;
@@ -329,8 +335,7 @@ a {
     background-color: #fff;
     overflow: hidden;
     
-    -webkit-animation: slide 1s calc(var(--nth-child) * 150ms) forwards;
-    animation: slide 1s calc(var(--nth-child) * 150ms) forwards;
+    
 }
 .button {
     width: 50%;
